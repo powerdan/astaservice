@@ -35,3 +35,6 @@
 
 # Composer PHAR
 /composer.phar
+
+# Also ignore AStA Logo
+/src/AStAService/CoreBundle/Resources/public/img/asta-logo.png

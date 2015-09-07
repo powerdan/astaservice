@@ -1,0 +1,7 @@
+app_page:
+    path:     /{pageId}
+    defaults: { _controller: AStAServiceAppBundle:Default:index, pageId: 1 }
+
+app_page_default:
+    path:     /
+    defaults: { _controller: AStAServiceAppBundle:Default:index, pageId: 1 }

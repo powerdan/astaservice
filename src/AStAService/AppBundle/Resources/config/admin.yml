@@ -1,0 +1,11 @@
+services:
+    sonata.admin.post:
+        class: AStAService\AppBundle\Admin\AppPageAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "App", label: "Page" }
+        arguments:
+            - ~
+            - AStAService\AppBundle\Entity\AppPage
+            - ~
+        calls:
+            - [ setTranslationDomain, [AStAServiceAppBundle]]

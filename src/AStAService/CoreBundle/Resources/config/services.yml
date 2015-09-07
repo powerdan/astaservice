@@ -1,0 +1,4 @@
+services:
+#    a_st_a_service_core.example:
+#        class: AStAService\CoreBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

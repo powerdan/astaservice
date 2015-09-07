@@ -1,0 +1,11 @@
+services:
+    sonata.admin.tracking.apppage:
+        class: AStAService\TrackingBundle\Admin\AppPageRequestAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "App Tracking", label: "Requests" }
+        arguments:
+            - ~
+            - AStAService\TrackingBundle\Entity\AppPageRequest
+            - ~
+        calls:
+            - [ setTranslationDomain, [AStAServiceTrackingBundle]]
